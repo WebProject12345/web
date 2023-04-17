@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="website icon" type="png" href="logo.jpeg">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="stylesheet" href="home.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NIKE-WOMEN</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+    
+    
+</head>
+<body>
+<div id="custom-alert" class="custom-alert">
+    <div class="custom-alert-content">
+      <p id="custom-alert-message"></p>
+      <button id="custom-alert-close">ok</button>
+    </div>
+  </div>
+ <header>
+    
+      
+    <a href="https://en.wikipedia.org/wiki/Nike,_Inc." target="_blank" >
+        <img title="Info about nike" class="logo"  src="logo.jpeg" />
+    </a>
+    <nav class="navbar">
+       <ul id="mylinks">
+          <i class="fa fa-home" id="home-icon"></i><a  target="_blank" href="home.html" >Home</a>
+          <i class="fas fa-male" id="male"></i><a target="_blank" href="men.html">Men</a>
+          <i class="fas fa-female" id="female"></i><a href="#home_page_women" class="active">Women</a>
+       </ul>
+    </nav>
+    <div class="icon">
+         <i class="fas fa-search" title="search" id="search-btn" onclick="showbar();"></i>
+          <i class="fas fa-shopping-bag cart-icon" title="shop now" onclick="showcart();" ></i >
+            
+          <!--cart-->
+          <div class="cart">
+          
+            <h2 class="cart-title">your cart</h2>
+            
+            <div class="cart-content">
+            </div>
+                <div class="total">
+                    <div class="total-title">total :</div>
+                    <div class="total-price"> $0</div>
+                </div>
+                <button class="buy">buy now</button> 
+                <button class="delete">delete</button>  
+                <i class="fa fa-times" id="close-cart" onclick="closecart();"></i>
+            
+          </div>
+         <i class="far fa-heart" id="heart" title="like" aria-hidden="true" onclick="heart();" ></i> 
+        
+         <i class="fas fa-user"  title="login now" onclick="show_form();"></i>
+         <i class="fas fa-bars"  id="menu" onclick="showmenu();"></i>
+    </div>
+    <form class="search-form">
+        <input type="search" id="search-bar" placeholder="What you looking for...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+ </header>
+ <!------------------------------------------------------------->
+ <div class="login_form">
+    <i class="fas fa-times" id="form-close" onclick="hideform();"></i>
+    <form>
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="Enter your email">
+        <input type="password" class="box" placeholder="Enter your password">
+        <input type="submit" value="Login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember" >remember me</label>
+        <p>forget password?<a href=""> Click here</a></p>
+        <p>don't have account?<a href="">Sign up</a></p>
+    </form>
+ </div>
+ <!------------------------------------------------------------------>
+  <!------------------------------------------------------------------>
+  <section class="home_page_women" id="home_page_women">
+    
+    <img class="women-image"src="photo1.jpeg" >
+    <div class="navbar_women">
+    <ul>
+      <li ><a href="#shoes">shoes</a></li>
+      <li ><a href="#clothing">clothing</a></li>
+      <li ><a href="#accessories">accessories</a></li>
+    </ul></div>
+     <img  class="women-image" src="photoo2.jpeg" >
+    
+   </div> 
+   
+   </section>
+
+<section class="shop-container" id="shoes">
+    <h2 color="white" id="title">shoes</h2>
+    <div class="shop-content">
+        <div class="product-box">
+          
+            <img src="shoes1.jpeg" class="product-img"> 
+          
+             <span class="nike">nike</span>
+             <h2 class="products-title" >nike blazer mid '77</h2>
+               <div class="star">
+                <i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="available">available : <span  class="availablenum">6</span></span>
+            <span class="price" >$105</span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes2.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike aire force 1 '07</h2>
+            <div class="star"><i class="fa fa-star-o star-icon"></i>
+                <i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$110</span>
+            <span class="available">available : <span  class="availablenum">5</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes3.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike air max sc</h2>
+            <div class="star">
+                <i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$85</span>
+                <span class="available">available : <span  class="availablenum">15</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes4.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike air max 90 futura</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$110</span>
+            <span class="available">available : <span  class="availablenum">9</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes5.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike air max axis</h2>
+            <div class="star">
+                <i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$74.97</span>
+            
+            <span class="available">available : <span  class="availablenum">2</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes6.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >air jordan 1 elevate low</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$123.97</span>
+            <span class="price2" ><s>$145</s></span>
+            <span class="available">available : <span  class="availablenum">4</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes7.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike pegasus 39</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$76.97</span>
+            <span class="price2" ><s>$130</s></span>
+            <span class="available">available : <span  class="availablenum">18</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes8.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike air force 1 '07</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$110</span>
+            <span class="available">available : <span  class="availablenum">22</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+   
+        <div class="product-box">
+            <img src="shoes10.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >air jordan oG</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$108.97</span>
+            <span class="available">available : <span  class="availablenum">20</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>     <div class="product-box">
+            <img src="shoes9.jpeg" class="product-img">
+            <h2 class="products-title" >air jordan 1 elevate low</h2>
+                <span class="nike">nike</span>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$114.97</span>
+            <span class="price2" ><s>$135</s></span>
+            <span class="available">available : <span  class="availablenum">16</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes11.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >jumpman two trey</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$155</span><span class="available">available : <span  class="availablenum">11</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="shoes12.jpeg" class="product-img">
+            <h2 class="products-title" >luka 1</h2>
+            <span class="nike">nike</span>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$93.97</span><span class="available">available : <span  class="availablenum">30</span></span>
+            <i class="fa fa-shopping-cart " id="add-cart" title="add to cart"></i>
+        </div>
+    </div>
+
+</section>
+
+<section class="shop-container" id="clothing">
+    
+    <h2  id="title">clothing</h2>
+    <div class="shop-content">
+        <div class="product-box">
+            <img src="vet1.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike sportwear phoenix fleece</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$80</span><span class="price2" ><s>$90</s></span><span class="available">available : <span  class="availablenum">5</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet2.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike dri-fit get fit</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$59.97</span><span class="price2" ><s>$70</s></span><span class="available">available : <span  class="availablenum">10</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet3.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike sportswear</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$38</span><span class="available">available : <span  class="availablenum">30</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet4.jpeg" class="product-img">
+            <h2 class="products-title" >women's nike dri-fit </h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$76.97</span><span class="price2" ><s>$90</s></span><span class="available">available : <span  class="availablenum">8</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet5.jpeg" class="product-img">
+            <span class="nike">nike</span>
+
+            <h2 class="products-title" >women's mid rise pants</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$70</span><span class="available">available : <span  class="availablenum">50</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet6.jpeg" class="product-img">
+            <h2 class="products-title" >women's easy joggers</h2>    
+                    <span class="nike">nike</span>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$59.79</span><span class="available">available : <span  class="availablenum">40</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet7.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike sportswear collection</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$95</span>
+            <span class="price2" ><s>$100</s></span>
+            <span class="available">available : <span  class="availablenum">6</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet8.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike sportswear</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$80</span><span class="available">available : <span  class="availablenum">25</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet9.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >women's running mid layer</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$97</span><span class="available">available : <span  class="availablenum">26</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart"title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet10.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike dri-fit one</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$40</span><span class="available">available : <span  class="availablenum">35</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart"title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet11.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike swoosh</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$40</span><span class="available">available : <span  class="availablenum">17</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart"title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="vet12.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike sportswear</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$48.97</span>
+            <span class="price2" ><s>$60</s></span>
+                <span class="available">available : <span  class="availablenum">6</span></span>
+            <i class="fa fa-shopping-cart " id="add-cart" title="add to cart"></i>
+        </div>
+    </div>
+
+</section>
+
+
+<section class="shop-container" id="accessories">
+    <h2  id="title">accessories</h2>
+    <div class="shop-content">
+        <div class="product-box">
+            <img src="acc1.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >mini backpack</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$32.97</span><span class="available">available : <span  class="availablenum">12</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc2.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike sportswear futura 365</h2>
+            
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$37</span><span class="available">available : <span  class="availablenum">18</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc3.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike brasilia jdi</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$27</span><span class="available">available : <span  class="availablenum">15</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc4.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike gym club</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i></div>
+            <span class="price" >$40</span><span class="available">available : <span  class="availablenum">16</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc5.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >blue light glasses</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$99</span><span class="available">available : <span  class="availablenum">31</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc6.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >nike evolution course tint</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$169</span><span class="available">available : <span  class="availablenum">44</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc7.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >running sunglasses</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$22</span><span class="available">available : <span  class="availablenum">50</span></span>
+           
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc8.jpeg" class="product-img">
+            <span class="nike">nike</span>
+           <h2 class="products-title" >nike show x3</h2>
+           <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+            <i class="fa fa-star-o star-icon star-icon2"></i>
+            <i class="fa fa-star-o star-icon star-icon3"></i>
+            <i class="fa fa-star-o star-icon star-icon4"></i>
+            <i class="fa fa-star-o star-icon star-icon5"></i>
+        </div>
+           <span class="price" >$199</span><span class="available">available : <span  class="availablenum">30</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc9.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >hat </h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$24</span><span class="available">available : <span  class="availablenum">20</span></span>
+            
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc10.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >scrunchies(2-pack)</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$12</span><span class="available">available : <span  class="availablenum">16</span></span>
+           
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc11.jpeg" class="product-img">
+            <span class="nike">nike</span>
+            <h2 class="products-title" >women's adjustable cap</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            <span class="price" >$152</span><span class="available">available : <span  class="availablenum">15</span></span>
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+        <div class="product-box">
+            <img src="acc12.jpeg" class="product-img">
+            <span class="nike">nike</span> 
+            <h2 class="products-title" >large velvet bow</h2>
+            <div class="star"><i class="fa fa-star-o star-icon star-icon1"></i>
+                <i class="fa fa-star-o star-icon star-icon2"></i>
+                <i class="fa fa-star-o star-icon star-icon3"></i>
+                <i class="fa fa-star-o star-icon star-icon4"></i>
+                <i class="fa fa-star-o star-icon star-icon5"></i>
+            </div>
+            
+            <span class="price" >$16</span><span class="available">available : <span  class="availablenum">33</span></span>
+            
+            <i class="fa fa-shopping-cart" id="add-cart" title="add to cart"></i>
+        </div>
+    </div>
+
+</section>
+
+
+<div class="footer" >
+    <div  class="footer1" >
+       <a href="https://www.nike.com/gift-cards">gift cards</a>
+       <a href="https://www.nike.com/promo-code">promotions</a>
+       <a href="https://www.nike.com/retail">find a store</a>
+       <a href="https://www.nike.com/email-signup">sign up for email</a>
+       <a href="https://accounts.nike.com/lookup?client_id=4fd2d5e7db76e0f85a6bb56721bd51df&redirect_uri=https://www.nike.com/auth/login&response_type=code&scope=openid%20nike.digital%20profile%20email%20phone%20flow%20country&state=9c49c471e2864d8ea9bdbeb4d885e9bd&code_challenge=K3SS0wZ4GJoK0j6VE1GAruhQjukmBfuAO4PMKbmkb1g&code_challenge_method=S256">become a member</a>
+       <a href="https://www.nike.com/stories">nike journal</a>
+       <a href="https://www.nike.com/#site-feedback">send us feedback</a>
+       <hr>
+       <details>
+           <summary>get help</summary>
+           <div class="detail">
+           <a href="https://www.nike.com/orders/details/">order status</a>
+           <a href="https://www.nike.com/help/a/shipping-delivery">shipping and delivery</a>
+           <a href="https://www.nike.com/help/a/returns-policy">returns</a>
+           <a href="https://www.nike.com/help/a/payment-options">payment options</a>
+           <a href="https://www.nike.com/orders/gift-card-lookup">gift card balence</a>
+           </div>
+       </details>
+       <details>
+           <summary>about nike</summary>
+           <div class="detail">
+           <a href="https://about.nike.com/en/newsroom">news</a>
+           <a href="https://jobs.nike.com/">careers</a>
+           <a href="https://investors.nike.com/Home/default.aspx">investors</a>
+           <a href="https://about.nike.com/en/impact">purpose</a>
+           <a href="https://www.nike.com/sustainability">sustainability</a></div>
+       </details>
+       <hr>
+       </div><br>
+      <div class="footer2"> 
+       <a  target="_blank" title="facebook"  href="https://www.facebook.com/nike/?mibextid=ZbWKwL" class="fa fa-facebook"></a>
+       <a target="_blank"  title="twwitter" href="https://twitter.com/Nike?t=ov878yB9gI5rHUd97eB9tQ&s=09" class="fa fa-twitter"></a>
+       <a target="_blank"  title="instagram" href="https://instagram.com/nike?igshid=YmMyMTA2M2Y=" class="fa fa-instagram"></a></p><br>
+       <a   href="web2.html" class="fa fa-map-marker"> </a><a href="web2.html" >united states</a>
+      <br><br> 
+      <a href="#contactoo" id="contact" onclick="show_contact();">contact us</a>
+      <p style="color:rgb(195, 191, 191)">issa hijazy,hala damaj,wafaa bokaily,mohammad al mestrah,mohammad hraybe ,Inc.all rights reserved</p></div>
+       
+   
+    </div>
+    <div class="contact"  id="contactoo">
+         
+       <div class="row">
+           <form>
+               <div class="inputbox">
+                   <input type="text" placeholder="name" required class="a1">
+                   <input type="email" placeholder="email" required class="a2">
+               </div>
+               <div class="inputbox"> 
+                   <input type="number" placeholder="number" required class="a3">
+                   <input type="text" placeholder="subject" required class="a4">
+                   
+               </div>
+               <textarea name="" id="" cols="30" rows="10" placeholder="message" required></textarea>
+              <center>
+                   <input type="submit"  class="bton" onclick="timesubmit();"> <br>
+                   <a href="#contact" onclick="hidecontact();" class="bton" >cancel</a>
+              </center>
+           </form>
+       </div>
+       <!------------------------------------------------------------------------------------->
+     </div><script src="home.js"></script> 
+   </body>
